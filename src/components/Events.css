@@ -97,6 +97,18 @@
   font-style: italic;
   margin-top: 1px;
 }
+.marriage-note {
+  max-width: 520px;
+  margin: 22px auto 0;
+  padding: 16px 18px;
+  border: 1px dashed rgba(163, 129, 47, 0.35);
+  border-radius: 8px;
+  text-align: center;
+  font-style: italic;
+  font-size: 16.5px;
+  color: var(--muted);
+  line-height: 1.75;
+}
 .event-actions {
   display: flex;
   gap: 8px;

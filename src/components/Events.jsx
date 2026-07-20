@@ -1,4 +1,4 @@
-import { EVENTS } from '../config';
+import { EVENTS, MARRIAGE_NOTE } from '../config';
 import './Events.css';
 
 const CalendarIcon = () => (
@@ -27,9 +27,9 @@ export default function Events() {
     <section className="details">
       <div className="reveal">
         <div className="section-eyebrow center">SAVE THE DATE</div>
-        <h2 className="section-title center">Nikah &amp; Reception</h2>
+        <h2 className="section-title center">Wedding Reception</h2>
         <p className="details-lede">
-          Two gatherings, one blessed beginning. We would be honoured to have you with us.
+          One blessed beginning. We would be honoured to have you with us.
         </p>
 
         {EVENTS.map((ev) => (
@@ -45,6 +45,7 @@ export default function Events() {
               <div className="row-body">
                 <div className="row-label">DATE &amp; TIME</div>
                 <div className="row-value">{ev.date}</div>
+                {ev.dateSub && <div className="row-sub">{ev.dateSub}</div>}
                 <div className="row-sub">{ev.time}</div>
               </div>
             </div>
@@ -66,6 +67,8 @@ export default function Events() {
             </div>
           </div>
         ))}
+
+        <p className="marriage-note">{MARRIAGE_NOTE}</p>
 
         <div className="divider">
           <span />

@@ -3,51 +3,45 @@
 export const WEDDING = {
   brideShort: 'Sandra',
   groomShort: 'Abhiram',
-  brideFull: 'Sandra Menon',
-  groomFull: 'Abhiram',
-  dateLabel: '25 · JULY · 2026',
-  dateTime: '2026-07-25T10:30:00+05:30',
-  landingVenue: 'APM AUDITORIUM, TIRUR',
-  footerLine: '25 JULY 2026 · TIRUR',
+  brideFull: 'Sandra Menon P',
+  groomFull: 'Abhiram P',
+  dateLabel: '22 · AUGUST · 2026',
+  dateTime: '2026-08-22T17:00:00+05:30',
+  landingVenue: 'NAKSHATRA AUDITORIUM, MANNUR',
+  footerLine: '22 AUGUST 2026 · MANNUR',
 };
 
 export const EVENTS = [
   {
     num: '01',
-    title: 'NIKAH CEREMONY',
-    date: '25.07.2026 · Saturday',
-    time: '10:30 AM ONWARDS',
-    venue: 'Amanath Convention Centre',
-    address: 'Panampalam, Tirur, Kerala',
-    mapsUrl:
-      'https://www.google.com/maps/search/?api=1&query=Amanath+Convention+Centre+Panampalam+Tirur+Kerala',
-  },
-  {
-    num: '02',
-    title: 'RECEPTION',
-    date: '25.07.2026 · Saturday',
-    time: '4:00 PM — 8:00 PM',
-    venue: 'APM Auditorium',
-    address: 'Thalakkadathur, Tirur, Kerala',
-    mapsUrl:
-      'https://www.google.com/maps/search/?api=1&query=APM+Auditorium+Thalakkadathur+Tirur+Kerala',
+    title: 'WEDDING RECEPTION',
+    date: '22.08.2026 · Saturday',
+    dateSub: '1202 Chingam 6',
+    time: '5:00 PM — 8:00 PM',
+    venue: 'Nakshatra Auditorium',
+    address: 'Mannur, Palakkad, Kerala',
+    mapsUrl: 'https://maps.app.goo.gl/KjRHrCjcqjm8h2Dq8',
   },
 ];
+
+// Shown below the event card, as on the printed invitation.
+export const MARRIAGE_NOTE =
+  'Marriage will be solemnized on 21 August 2026 (1202 Chingam 5), Friday, at Kavitha Auditorium, Malampuzha — Muhoortham between 10:30 am & 11:30 am.';
 
 export const FAMILIES = [
   {
     side: "BRIDE'S FAMILY",
-    name: 'Sandra Menon',
-    father: 'Sakeer Hussain',
-    mother: 'Raheema',
-    residence: 'Kallingal Elayodath House, Tirur',
+    name: 'Sandra Menon P',
+    father: 'T.E. Vijayan',
+    mother: 'Sheeja P',
+    residence: 'Dwaraka (Valiya Padaveedu), Akathethara, Palakkad',
   },
   {
     side: "GROOM'S FAMILY",
-    name: 'Abhiram',
-    father: 'Mohamed Nazer',
-    mother: 'Safiya',
-    residence: 'Vadakkiniyedath House, Chembra',
+    name: 'Abhiram P',
+    father: 'Late Sivaraman Nair',
+    mother: 'Ajitha Sivaraman',
+    residence: 'Panthathodi Kalam, Mannur West, Kottakunnu, Palakkad',
   },
 ];
 
@@ -58,10 +52,10 @@ export const MOMENTS = [
 ];
 
 export const VERSE = {
-  arabic: 'وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا',
+  sanskrit: 'समानी व आकूतिः समाना हृदयानि वः । समानमस्तु वो मनो यथा वः सुसहासति ॥',
   english:
-    '"And of His signs is that He created for you from yourselves mates that you may find tranquility in them."',
-  reference: '— QURAN 30:21',
+    '"United be your purpose, harmonious your hearts, united your minds — so that you may live together in accord."',
+  reference: '— RIG VEDA 10.191.4',
 };
 
 // Realtime Database paths for this couple

@@ -44,8 +44,8 @@ export default function Landing({ opened, onOpen }) {
         ))}
       </div>
 
-      <div className="landing-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-      <div className="landing-stamp">WITH THE BLESSINGS OF ALMIGHTY ALLAH</div>
+      <div className="landing-invocation">॥ ॐ नमो भगवते वासुदेवाय ॥</div>
+      <div className="landing-stamp">WITH THE DIVINE BLESSINGS</div>
       <div className="landing-greet">Dear</div>
       <div className="landing-guest">{guest}</div>
       <h1 className="landing-names">

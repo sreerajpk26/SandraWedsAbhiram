@@ -1,15 +1,15 @@
 # Sandra & Abhiram — Wedding Invitation
 
-Digital wedding invitation for **Sandra Menon & Abhiram** — 25 July 2026, Tirur, Kerala.
+Digital wedding invitation for **Sandra Menon P & Abhiram P** — Wedding Reception, 22 August 2026, Nakshatra Auditorium, Mannur, Palakkad, Kerala.
 Built with **React + Vite**.
 
 ## Features
 
-- Landing screen with Bismillah and "Open Invitation"
-- Live countdown to the Nikah
+- Landing screen with invocation and "Open Invitation"
+- Live countdown to the reception
 - Photo gallery ("Our Moments") — images loaded from Firebase
-- Nikah & Reception details with Google Maps links
-- Quran verse and family details
+- Reception details with Google Maps link (plus marriage ceremony note)
+- Vedic verse and family details
 - **Wishes wall** — guests can send blessings (Firebase Realtime Database, with localStorage fallback)
 - No RSVP / no WhatsApp sections
 
@@ -17,11 +17,11 @@ Built with **React + Vite**.
 
 ```
 ├── index.html                 # Vite entry HTML
-├── vite.config.js             # base path set to /ShahdaWedsRafi/ for GitHub Pages
+├── vite.config.js             # base path set to /SandraWedsAbhiram/ for GitHub Pages
 ├── package.json
 └── src/
     ├── main.jsx               # React entry point
-    ├── App.jsx                # Page layout + admin mode + toast state
+    ├── App.jsx                # Page layout + toast state
     ├── config.js              # ALL editable content: names, dates, venues, Firebase
     ├── lib/
     │   └── firebase.js        # Firebase app + Realtime Database init
@@ -62,7 +62,7 @@ npm run preview   # preview the production build
 
 ## Deploy to GitHub Pages (manual)
 
-1. Create a GitHub repo named `ShahdaWedsRafi` and push this project to `main`.
+1. Create a GitHub repo named `SandraWedsAbhiram` and push this project to `main`.
    (If you use a different repo name, update `base` in `vite.config.js`.)
 2. Deploy the built site to the `gh-pages` branch:
 
@@ -72,7 +72,7 @@ npm run deploy
 
 3. In the repo: Settings → Pages → Source: `gh-pages` branch, `/ (root)`.
 
-Live URL: `https://<username>.github.io/ShahdaWedsRafi/`
+Live URL: `https://<username>.github.io/SandraWedsAbhiram/`
 
 ## Customization
 

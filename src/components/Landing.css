@@ -63,14 +63,13 @@
   50% { opacity: 0.9; transform: scale(1) rotate(45deg); }
 }
 
-.landing-bismillah {
+.landing-invocation {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(20px, 5vw, 28px);
+  font-size: clamp(18px, 4.5vw, 26px);
   color: var(--gold2);
   margin-bottom: 18px;
   opacity: 0;
   animation: fadeIn 1s ease forwards 0.2s;
-  direction: rtl;
   line-height: 1.8;
 }
 .landing-stamp {
