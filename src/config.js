@@ -63,11 +63,8 @@ export const WISH_PATH = 'sandra-abhiram/wishes';
 export const MEDIA_PATH = 'sandra-abhiram/media';
 
 export const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSy841fvxVl1KeHOro6WKJ72o22izuCpJ-b4',
-  authDomain: 'yaseen-jumana-wedding.firebaseapp.com',
-  databaseURL: 'https://yaseen-jumana-wedding-default-rtdb.firebaseio.com',
-  projectId: 'yaseen-jumana-wedding',
-  storageBucket: 'yaseen-jumana-wedding.firebasestorage.app',
-  messagingSenderId: '355557621111',
-  appId: '1:355557621111:web:d0b78c34bfe5a53b69f572',
+  databaseURL:
+    'https://sandra-abhiram-wedding-default-rtdb.asia-southeast1.firebasedatabase.app',
+  projectId: 'sandra-abhiram-wedding',
+  authDomain: 'sandra-abhiram-wedding.firebaseapp.com',
 };
