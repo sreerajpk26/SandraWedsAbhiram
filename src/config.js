@@ -45,12 +45,11 @@ export const FAMILIES = [
   },
 ];
 
-// Drop the actual image files into public/photos/ with these names.
+// photo1 is reserved for social-share / Open Graph metadata (not shown in the gallery).
 export const MOMENTS = [
-  { id: 'photo1', src: 'photos/photo1.jpg', caption: 'Every love story is beautiful, but ours is my favourite.' },
-  { id: 'photo2', src: 'photos/photo2.jpg', caption: 'Together is a wonderful place to be.' },
-  { id: 'photo3', src: 'photos/photo3.jpg', caption: 'You are my today and all of my tomorrows.' },
-  { id: 'photo4', src: 'photos/photo4.jpg', caption: 'Two hearts, one forever.' },
+  { id: 'photo2', src: 'photos/photo2.jpg', caption: 'Every love story is beautiful, but ours is my favourite.' },
+  { id: 'photo3', src: 'photos/photo3.jpg', caption: 'Together is a wonderful place to be.' },
+  { id: 'photo4', src: 'photos/photo4.jpg', caption: 'You are my today and all of my tomorrows.' },
 ];
 
 export const VERSE = {

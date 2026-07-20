@@ -80,14 +80,13 @@ Live URL: `https://<username>.github.io/SandraWedsAbhiram/`
 
 ## Gallery photos (free — no Firebase Storage)
 
-Do **not** use Firebase Storage. Drop 3 images into `public/photos/`:
-
 ```
-public/photos/photo1.jpg
-public/photos/photo2.jpg
-public/photos/photo3.jpg
+public/photos/photo1.jpg   ← share thumbnail (WhatsApp / Open Graph only)
+public/photos/photo2.jpg   ← gallery
+public/photos/photo3.jpg   ← gallery
+public/photos/photo4.jpg   ← gallery
 ```
 
-Then rebuild / redeploy. Until a file exists, that card shows a "PHOTO n" placeholder.
-Captions and filenames are configured in `src/config.js` (`MOMENTS`).
-If you use `.png` or `.webp`, update the `src` paths there to match.
+Then rebuild / redeploy. Captions live in `src/config.js` (`MOMENTS`).
+
+After Pages is live, for reliable WhatsApp previews update `og:image` / `twitter:image` in `index.html` to the full URL, e.g. `https://<username>.github.io/SandraWedsAbhiram/photos/photo1.jpg`.
