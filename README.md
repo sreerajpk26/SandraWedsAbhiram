@@ -7,10 +7,10 @@ Built with **React + Vite**.
 
 - Landing screen with invocation and "Open Invitation"
 - Live countdown to the reception
-- Photo gallery ("Our Moments") — images loaded from Firebase
+- Photo gallery ("Our Moments") — images shipped with the site (no Firebase Storage needed)
 - Reception details with Google Maps link (plus marriage ceremony note)
 - Vedic verse and family details
-- **Wishes wall** — guests can send blessings (Firebase Realtime Database, with localStorage fallback)
+- **Wishes wall** — guests can send blessings (Firebase Realtime Database only, free Spark plan)
 - No RSVP / no WhatsApp sections
 
 ## Project structure
@@ -28,8 +28,7 @@ Built with **React + Vite**.
     ├── hooks/
     │   ├── useCountdown.js    # Live countdown timer
     │   ├── useReveal.js       # Scroll-reveal animations
-    │   ├── useWishes.js       # Load/submit wishes (Firebase + localStorage)
-    │   └── useMedia.js        # Gallery photos loaded from Firebase
+    │   └── useWishes.js       # Load/submit wishes (Firebase + localStorage)
     ├── styles/
     │   └── global.css         # Theme variables + shared styles
     └── components/            # One component + CSS file per section
@@ -79,22 +78,16 @@ Live URL: `https://<username>.github.io/SandraWedsAbhiram/`
 - All names, dates, venues, and map links: `src/config.js`
 - Personalized guest greeting: share the link with `?to=Guest%20Name`
 
-## Gallery photos (via Firebase)
+## Gallery photos (free — no Firebase Storage)
 
-Photos are read from the Realtime Database path `sandra-abhiram/media`.
-In the Firebase console, add image URLs under that path:
+Do **not** use Firebase Storage. Drop 3 images into `public/photos/`:
 
-```json
-{
-  "sandra-abhiram": {
-    "media": {
-      "photo1": "https://…/first.jpg",
-      "photo2": "https://…/second.jpg",
-      "photo3": "https://…/third.jpg"
-    }
-  }
-}
+```
+public/photos/photo1.jpg
+public/photos/photo2.jpg
+public/photos/photo3.jpg
 ```
 
-Any publicly accessible image URL works (Firebase Storage, Cloudinary, etc.).
-Until a URL is set, the card shows a "PHOTO n" placeholder.
+Then rebuild / redeploy. Until a file exists, that card shows a "PHOTO n" placeholder.
+Captions and filenames are configured in `src/config.js` (`MOMENTS`).
+If you use `.png` or `.webp`, update the `src` paths there to match.
