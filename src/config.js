@@ -45,10 +45,11 @@ export const FAMILIES = [
   },
 ];
 
+// Drop the actual image files into public/photos/ with these names.
 export const MOMENTS = [
-  { id: 'photo1', caption: 'Every love story is beautiful, but ours is my favourite.' },
-  { id: 'photo2', caption: 'Together is a wonderful place to be.' },
-  { id: 'photo3', caption: 'You are my today and all of my tomorrows.' },
+  { id: 'photo1', src: 'photos/photo1.jpg', caption: 'Every love story is beautiful, but ours is my favourite.' },
+  { id: 'photo2', src: 'photos/photo2.jpg', caption: 'Together is a wonderful place to be.' },
+  { id: 'photo3', src: 'photos/photo3.jpg', caption: 'You are my today and all of my tomorrows.' },
 ];
 
 export const VERSE = {
@@ -58,9 +59,8 @@ export const VERSE = {
   reference: '— RIG VEDA 10.191.4',
 };
 
-// Realtime Database paths for this couple
+// Realtime Database path for this couple
 export const WISH_PATH = 'sandra-abhiram/wishes';
-export const MEDIA_PATH = 'sandra-abhiram/media';
 
 export const FIREBASE_CONFIG = {
   databaseURL:

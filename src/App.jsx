@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Landing from './components/Landing';
 import Invite from './components/Invite';
 import Countdown from './components/Countdown';
@@ -11,21 +11,15 @@ import Footer from './components/Footer';
 import MonogramBadge from './components/MonogramBadge';
 import Toast from './components/Toast';
 import { useReveal } from './hooks/useReveal';
-import { useMedia } from './hooks/useMedia';
 
 export default function App() {
   const [opened, setOpened] = useState(false);
   const [toast, setToast] = useState('');
-  const { photos, load } = useMedia();
   const mainRef = useReveal(opened);
 
   const showToast = useCallback((msg) => {
     setToast(msg);
   }, []);
-
-  useEffect(() => {
-    if (opened) load();
-  }, [opened, load]);
 
   return (
     <>
@@ -41,7 +35,7 @@ export default function App() {
       <div ref={mainRef} className={`main ${opened ? 'show' : ''}`}>
         <Invite />
         <Countdown />
-        <Moments photos={photos} />
+        <Moments />
         <Events />
         <Verse />
         <Families />
