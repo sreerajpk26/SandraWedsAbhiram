@@ -63,8 +63,13 @@ export const VERSE = {
 export const WISH_PATH = 'sandra-abhiram/wishes';
 
 export const FIREBASE_CONFIG = {
+  apiKey: 'AIzaSyCy8ENOgzGbTduzM1P8V6w2ZJ_3jyt6UZA',
+  authDomain: 'sandra-abhiram-wedding.firebaseapp.com',
   databaseURL:
     'https://sandra-abhiram-wedding-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'sandra-abhiram-wedding',
-  authDomain: 'sandra-abhiram-wedding.firebaseapp.com',
+  storageBucket: 'sandra-abhiram-wedding.firebasestorage.app',
+  messagingSenderId: '84081206307',
+  appId: '1:84081206307:web:3a012f8758734d290fbd96',
+  measurementId: 'G-D4TP57MGH0',
 };
