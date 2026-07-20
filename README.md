@@ -7,7 +7,7 @@ Built with **React + Vite**.
 
 - Landing screen with Bismillah and "Open Invitation"
 - Live countdown to the Nikah
-- Photo gallery ("Our Moments") with admin upload
+- Photo gallery ("Our Moments") — images loaded from Firebase
 - Nikah & Reception details with Google Maps links
 - Quran verse and family details
 - **Wishes wall** — guests can send blessings (Firebase Realtime Database, with localStorage fallback)
@@ -29,7 +29,7 @@ Built with **React + Vite**.
     │   ├── useCountdown.js    # Live countdown timer
     │   ├── useReveal.js       # Scroll-reveal animations
     │   ├── useWishes.js       # Load/submit wishes (Firebase + localStorage)
-    │   └── useMedia.js        # Gallery photo load/save
+    │   └── useMedia.js        # Gallery photos loaded from Firebase
     ├── styles/
     │   └── global.css         # Theme variables + shared styles
     └── components/            # One component + CSS file per section
@@ -78,4 +78,23 @@ Live URL: `https://<username>.github.io/ShahdaWedsRafi/`
 
 - All names, dates, venues, and map links: `src/config.js`
 - Personalized guest greeting: share the link with `?to=Guest%20Name`
-- Admin mode (upload gallery photos): footer → **ADMIN** → PIN `2026SR` (change `ADMIN_PIN` in `src/config.js`)
+
+## Gallery photos (via Firebase)
+
+Photos are read from the Realtime Database path `shahda-rafi/media`.
+In the Firebase console, add image URLs under that path:
+
+```json
+{
+  "shahda-rafi": {
+    "media": {
+      "photo1": "https://…/first.jpg",
+      "photo2": "https://…/second.jpg",
+      "photo3": "https://…/third.jpg"
+    }
+  }
+}
+```
+
+Any publicly accessible image URL works (Firebase Storage, Cloudinary, etc.).
+Until a URL is set, the card shows a "PHOTO n" placeholder.

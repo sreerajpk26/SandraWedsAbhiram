@@ -64,8 +64,6 @@ export const VERSE = {
   reference: '— QURAN 30:21',
 };
 
-export const ADMIN_PIN = '2026SR';
-
 // Realtime Database paths for this couple
 export const WISH_PATH = 'shahda-rafi/wishes';
 export const MEDIA_PATH = 'shahda-rafi/media';

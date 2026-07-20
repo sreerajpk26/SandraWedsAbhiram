@@ -12,13 +12,11 @@ import MonogramBadge from './components/MonogramBadge';
 import Toast from './components/Toast';
 import { useReveal } from './hooks/useReveal';
 import { useMedia } from './hooks/useMedia';
-import { ADMIN_PIN } from './config';
 
 export default function App() {
   const [opened, setOpened] = useState(false);
-  const [adminMode, setAdminMode] = useState(false);
   const [toast, setToast] = useState('');
-  const media = useMedia();
+  const { photos, load } = useMedia();
   const mainRef = useReveal(opened);
 
   const showToast = useCallback((msg) => {
@@ -26,19 +24,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (opened) media.load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [opened]);
-
-  const handleAdmin = () => {
-    const pin = prompt('Enter admin PIN:');
-    if (pin !== ADMIN_PIN) {
-      showToast('INCORRECT PIN');
-      return;
-    }
-    setAdminMode(true);
-    showToast('ADMIN MODE — UPLOAD PHOTOS');
-  };
+    if (opened) load();
+  }, [opened, load]);
 
   return (
     <>
@@ -54,12 +41,12 @@ export default function App() {
       <div ref={mainRef} className={`main ${opened ? 'show' : ''}`}>
         <Invite />
         <Countdown />
-        <Moments media={media} adminMode={adminMode} showToast={showToast} />
+        <Moments photos={photos} />
         <Events />
         <Verse />
         <Families />
         <Wishes opened={opened} showToast={showToast} />
-        <Footer onAdmin={handleAdmin} />
+        <Footer />
       </div>
 
       <Toast message={toast} onDone={() => setToast('')} />
