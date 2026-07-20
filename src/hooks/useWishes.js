@@ -3,7 +3,7 @@ import { ref, get, push, query, orderByKey, limitToLast } from 'firebase/databas
 import { db } from '../lib/firebase';
 import { WISH_PATH } from '../config';
 
-const LS_KEY = 'shahda-rafi-wishes';
+const LS_KEY = 'sandra-abhiram-wishes';
 export const PAGE_SIZE = 6;
 
 function localWishes() {

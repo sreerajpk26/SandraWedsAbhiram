@@ -20,7 +20,7 @@ export default function MonogramBadge({ visible }) {
           &amp;
         </text>
         <text x="70" y="62" textAnchor="middle" fontFamily="Cinzel, serif" fontSize="28" fill="#c6a35c">
-          R
+          A
         </text>
       </svg>
     </div>

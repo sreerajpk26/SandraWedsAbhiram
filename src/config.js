@@ -1,10 +1,10 @@
 // All editable wedding content and settings live here.
 
 export const WEDDING = {
-  brideShort: 'Shahda',
-  groomShort: 'Rafi',
-  brideFull: 'Shahda Sherin',
-  groomFull: 'Mohamed Rafi',
+  brideShort: 'Sandra',
+  groomShort: 'Abhiram',
+  brideFull: 'Sandra Menon',
+  groomFull: 'Abhiram',
   dateLabel: '25 · JULY · 2026',
   dateTime: '2026-07-25T10:30:00+05:30',
   landingVenue: 'APM AUDITORIUM, TIRUR',
@@ -37,14 +37,14 @@ export const EVENTS = [
 export const FAMILIES = [
   {
     side: "BRIDE'S FAMILY",
-    name: 'Shahda Sherin',
+    name: 'Sandra Menon',
     father: 'Sakeer Hussain',
     mother: 'Raheema',
     residence: 'Kallingal Elayodath House, Tirur',
   },
   {
     side: "GROOM'S FAMILY",
-    name: 'Mohamed Rafi',
+    name: 'Abhiram',
     father: 'Mohamed Nazer',
     mother: 'Safiya',
     residence: 'Vadakkiniyedath House, Chembra',
@@ -65,8 +65,8 @@ export const VERSE = {
 };
 
 // Realtime Database paths for this couple
-export const WISH_PATH = 'shahda-rafi/wishes';
-export const MEDIA_PATH = 'shahda-rafi/media';
+export const WISH_PATH = 'sandra-abhiram/wishes';
+export const MEDIA_PATH = 'sandra-abhiram/media';
 
 export const FIREBASE_CONFIG = {
   apiKey: 'AIzaSy841fvxVl1KeHOro6WKJ72o22izuCpJ-b4',

@@ -1,6 +1,6 @@
-# Shahda & Rafi — Wedding Invitation
+# Sandra & Abhiram — Wedding Invitation
 
-Digital wedding invitation for **Shahda Sherin & Mohamed Rafi** — 25 July 2026, Tirur, Kerala.
+Digital wedding invitation for **Sandra Menon & Abhiram** — 25 July 2026, Tirur, Kerala.
 Built with **React + Vite**.
 
 ## Features
@@ -81,12 +81,12 @@ Live URL: `https://<username>.github.io/ShahdaWedsRafi/`
 
 ## Gallery photos (via Firebase)
 
-Photos are read from the Realtime Database path `shahda-rafi/media`.
+Photos are read from the Realtime Database path `sandra-abhiram/media`.
 In the Firebase console, add image URLs under that path:
 
 ```json
 {
-  "shahda-rafi": {
+  "sandra-abhiram": {
     "media": {
       "photo1": "https://…/first.jpg",
       "photo2": "https://…/second.jpg",
