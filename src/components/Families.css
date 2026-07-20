@@ -1,0 +1,62 @@
+.families {
+  background: var(--bg2);
+  padding: 76px 24px 66px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.family-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .family-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 720px;
+  }
+}
+.family-card {
+  background: #fff;
+  border: 1px solid var(--cardborder);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+  padding: 28px 22px;
+  text-align: center;
+}
+.family-side {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.32em;
+  font-size: 9px;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.family-name {
+  font-family: 'Italiana', serif;
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.family-detail {
+  font-size: 16.5px;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.85;
+}
+.family-detail strong {
+  font-family: 'Cinzel', serif;
+  font-style: normal;
+  font-size: 8px;
+  letter-spacing: 0.28em;
+  color: var(--gold);
+  display: block;
+  margin: 14px 0 4px;
+  font-weight: 500;
+}
+.family-diamond {
+  color: var(--gold);
+  opacity: 0.45;
+  margin: 10px 0;
+  font-size: 12px;
+}

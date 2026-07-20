@@ -1,0 +1,179 @@
+#landing {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: radial-gradient(ellipse at 50% 32%, #2a2118 0%, #1a1510 52%, #0e0b08 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 28px;
+  text-align: center;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+#landing.gone {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#landing::before {
+  content: '';
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(198, 163, 92, 0.45);
+  pointer-events: none;
+}
+#landing::after {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  border: 1px solid rgba(198, 163, 92, 0.2);
+  pointer-events: none;
+}
+
+.ornament {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards 1.5s;
+}
+.ornament.tl { top: 30px; left: 30px; border-top: 2px solid var(--gold2); border-left: 2px solid var(--gold2); }
+.ornament.tr { top: 30px; right: 30px; border-top: 2px solid var(--gold2); border-right: 2px solid var(--gold2); }
+.ornament.bl { bottom: 30px; left: 30px; border-bottom: 2px solid var(--gold2); border-left: 2px solid var(--gold2); }
+.ornament.br { bottom: 30px; right: 30px; border-bottom: 2px solid var(--gold2); border-right: 2px solid var(--gold2); }
+
+.glitter {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.glitter .spark {
+  position: absolute;
+  opacity: 0;
+  background: radial-gradient(circle, #fff 0%, #ffe9b8 30%, var(--gold2) 60%, rgba(198, 163, 92, 0) 78%);
+  clip-path: polygon(50% 0%, 55% 45%, 100% 50%, 55% 55%, 50% 100%, 45% 55%, 0% 50%, 45% 45%);
+  animation: sparkle ease-in-out infinite;
+}
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0.2) rotate(0deg); }
+  50% { opacity: 0.9; transform: scale(1) rotate(45deg); }
+}
+
+.landing-bismillah {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 5vw, 28px);
+  color: var(--gold2);
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 0.2s;
+  direction: rtl;
+  line-height: 1.8;
+}
+.landing-stamp {
+  font-family: 'Cinzel', serif;
+  font-size: 8.5px;
+  letter-spacing: 0.42em;
+  color: var(--gold2);
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 0.4s;
+}
+.landing-greet {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.35em;
+  font-size: 9.5px;
+  color: rgba(241, 234, 214, 0.7);
+  margin-bottom: 8px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 0.55s;
+}
+.landing-guest {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(20px, 5vw, 26px);
+  color: #f1ead6;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 0.7s;
+}
+.landing-names {
+  font-family: 'Italiana', serif;
+  font-size: clamp(52px, 15vw, 92px);
+  line-height: 0.88;
+  color: #f5efe0;
+  margin-bottom: 18px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards 0.85s;
+}
+.landing-names .amp {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold2);
+  display: block;
+  font-size: 0.46em;
+  margin: 8px 0;
+}
+.landing-date {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.4em;
+  font-size: clamp(12px, 3vw, 15px);
+  color: var(--gold2);
+  margin-bottom: 14px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 1.05s;
+}
+.landing-venue {
+  font-family: 'Cinzel', serif;
+  font-size: 8.5px;
+  letter-spacing: 0.32em;
+  color: #9a9276;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 1.2s;
+  margin-bottom: 32px;
+}
+.landing-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards 1.3s;
+}
+.landing-divider span {
+  width: 55px;
+  height: 1px;
+  background: var(--gold2);
+  opacity: 0.5;
+}
+.landing-divider .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold2);
+}
+.enter-btn {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards 1.45s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color: #1a1510;
+  border: none;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.28em;
+  font-size: 10.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 2px;
+  box-shadow: 0 10px 30px rgba(198, 163, 92, 0.35);
+}
+.enter-btn:hover,
+.enter-btn:active {
+  filter: brightness(1.08);
+}

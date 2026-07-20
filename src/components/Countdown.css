@@ -1,0 +1,52 @@
+.countdown {
+  background: var(--bg2);
+  padding: 56px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.cd-label {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.4em;
+  font-size: 9.5px;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+.cd-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.cd-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.cd-unit {
+  min-width: 72px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.cd-num {
+  font-family: 'Italiana', serif;
+  font-size: clamp(36px, 10vw, 52px);
+  color: var(--ink);
+  line-height: 1;
+}
+.cd-txt {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.28em;
+  font-size: 8px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.cd-sep {
+  font-family: 'Italiana', serif;
+  font-size: 28px;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-bottom: 18px;
+}

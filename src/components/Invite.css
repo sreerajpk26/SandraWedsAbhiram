@@ -1,0 +1,61 @@
+.invite {
+  background: var(--bg);
+  padding: 88px 28px 66px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.invite-blessing {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.35em;
+  font-size: 9px;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+.invite-names {
+  font-family: 'Italiana', serif;
+  font-size: clamp(48px, 13vw, 96px);
+  line-height: 0.9;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.invite-names .amp {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.5em;
+  display: block;
+  margin: 6px 0;
+}
+.invite-date {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.35em;
+  font-size: 12px;
+  color: var(--gold);
+  margin-bottom: 36px;
+}
+.invite-body {
+  max-width: 44ch;
+  margin: 0 auto;
+}
+.invite-body p {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.85;
+  color: var(--ink);
+  margin-bottom: 14px;
+  font-style: italic;
+}
+.invite-body .accent {
+  font-style: normal;
+  font-family: 'Italiana', serif;
+  font-size: 1.15em;
+  color: var(--ink);
+}
+.stars {
+  letter-spacing: 0.6em;
+  color: var(--gold);
+  margin: 28px 0 8px;
+  font-size: 14px;
+  opacity: 0.7;
+}

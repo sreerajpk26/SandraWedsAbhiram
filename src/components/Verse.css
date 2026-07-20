@@ -1,0 +1,29 @@
+.verse-section {
+  background: var(--bg);
+  padding: 64px 28px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.verse-ar {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(18px, 4.5vw, 24px);
+  color: var(--ink);
+  line-height: 2;
+  margin: 0 auto 20px;
+  direction: rtl;
+  max-width: 36ch;
+}
+.verse-en {
+  font-style: italic;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 42ch;
+  margin: 0 auto 14px;
+  line-height: 1.85;
+}
+.verse-ref {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+}

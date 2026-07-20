@@ -1,0 +1,153 @@
+:root {
+  --bg: #f7f2e7;
+  --bg2: #f0e9d8;
+  --bg3: #e8dfc9;
+  --green: #3d2e1f;
+  --green2: #5a4432;
+  --gold: #a3812f;
+  --gold2: #c6a35c;
+  --ink: #2a2a1c;
+  --muted: #6f6650;
+  --rule: rgba(163, 129, 47, 0.22);
+  --card: #ffffff;
+  --cardborder: rgba(163, 129, 47, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating dust twinkle */
+.travel-dots {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+.travel-dot {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--gold2);
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle linear infinite;
+}
+.travel-dot:nth-child(1) { left: 8%; top: 20%; animation-duration: 3s; }
+.travel-dot:nth-child(2) { left: 22%; top: 65%; animation-duration: 4s; animation-delay: -0.8s; }
+.travel-dot:nth-child(3) { left: 45%; top: 15%; animation-duration: 3.5s; animation-delay: -1.5s; }
+.travel-dot:nth-child(4) { left: 68%; top: 72%; animation-duration: 4.5s; animation-delay: -0.4s; }
+.travel-dot:nth-child(5) { left: 82%; top: 38%; animation-duration: 3.2s; animation-delay: -2s; }
+.travel-dot:nth-child(6) { left: 92%; top: 55%; animation-duration: 3.8s; animation-delay: -1s; }
+.travel-dot:nth-child(7) { left: 35%; top: 82%; animation-duration: 4.2s; animation-delay: -0.3s; }
+.travel-dot:nth-child(8) { left: 55%; top: 48%; animation-duration: 3.6s; animation-delay: -2.5s; }
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 0.55; }
+}
+
+/* Main content shown after opening the invitation */
+.main {
+  display: none;
+}
+.main.show {
+  display: block;
+}
+
+/* Shared section elements */
+.section-eyebrow {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.42em;
+  font-size: 9.5px;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.section-title {
+  font-family: 'Italiana', serif;
+  font-size: clamp(36px, 9vw, 54px);
+  color: var(--ink);
+  margin-bottom: 28px;
+  line-height: 1.1;
+}
+.section-eyebrow.center,
+.section-title.center {
+  text-align: center;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 44px 0 10px;
+}
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+  max-width: 76px;
+}
+.divider .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.on {
+  opacity: 1;
+  transform: none;
+}
+
+@media (min-width: 640px) {
+  .invite,
+  .families,
+  .details,
+  .wishes,
+  .moments,
+  .countdown,
+  .verse-section {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
