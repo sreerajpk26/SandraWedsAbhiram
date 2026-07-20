@@ -48,6 +48,9 @@ Built with **React + Vite**.
 ## Run locally
 
 ```bash
+cp .env.example .env
+# Fill .env with your Firebase web config (never commit .env)
+
 npm install
 npm run dev
 ```

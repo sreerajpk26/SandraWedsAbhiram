@@ -62,14 +62,14 @@ export const VERSE = {
 // Realtime Database path for this couple
 export const WISH_PATH = 'sandra-abhiram/wishes';
 
+// Values come from .env (gitignored). Copy .env.example → .env for local use.
 export const FIREBASE_CONFIG = {
-  apiKey: 'AIzaSyCy8ENOgzGbTduzM1P8V6w2ZJ_3jyt6UZA',
-  authDomain: 'sandra-abhiram-wedding.firebaseapp.com',
-  databaseURL:
-    'https://sandra-abhiram-wedding-default-rtdb.asia-southeast1.firebasedatabase.app',
-  projectId: 'sandra-abhiram-wedding',
-  storageBucket: 'sandra-abhiram-wedding.firebasestorage.app',
-  messagingSenderId: '84081206307',
-  appId: '1:84081206307:web:3a012f8758734d290fbd96',
-  measurementId: 'G-D4TP57MGH0',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
