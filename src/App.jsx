@@ -9,6 +9,7 @@ import Families from './components/Families';
 import Wishes from './components/Wishes';
 import Footer from './components/Footer';
 import MonogramBadge from './components/MonogramBadge';
+import MusicControl from './components/MusicControl';
 import Toast from './components/Toast';
 import { useReveal } from './hooks/useReveal';
 
@@ -30,6 +31,7 @@ export default function App() {
       </div>
 
       <MonogramBadge visible={opened} />
+      <MusicControl active={opened} />
       <Landing opened={opened} onOpen={() => setOpened(true)} />
 
       <div ref={mainRef} className={`main ${opened ? 'show' : ''}`}>

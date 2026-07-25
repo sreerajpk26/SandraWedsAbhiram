@@ -1,0 +1,36 @@
+#music-control {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 900;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s, visibility 0.4s, background 0.2s;
+  background: rgba(247, 242, 231, 0.95);
+  border-radius: 50%;
+  border: 1px solid rgba(163, 129, 47, 0.35);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  color: var(--green);
+  cursor: pointer;
+  padding: 0;
+}
+#music-control.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+#music-control:hover {
+  background: #fff;
+  color: var(--gold);
+}
+#music-control svg {
+  width: 20px;
+  height: 20px;
+}
