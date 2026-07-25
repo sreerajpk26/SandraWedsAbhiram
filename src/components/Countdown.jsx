@@ -15,7 +15,7 @@ export default function Countdown() {
   return (
     <section className="countdown">
       <div className="reveal">
-        <div className="cd-label">DAYS UNTIL FOREVER</div>
+        <div className="cd-label">The Celebration of Love Begins In</div>
         <div className="cd-grid">
           {UNITS.map(([key, label], i) => (
             <span key={key} className="cd-item">
