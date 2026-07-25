@@ -97,6 +97,23 @@
   font-style: italic;
   margin-top: 1px;
 }
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 2px;
+}
+.contact-link {
+  font-family: 'Italiana', serif;
+  font-size: 18px;
+  color: var(--ink);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+.contact-link:hover {
+  color: var(--gold);
+}
 .marriage-note {
   max-width: 520px;
   margin: 22px auto 0;

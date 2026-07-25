@@ -24,6 +24,12 @@ export const EVENTS = [
   },
 ];
 
+// Contact numbers shown on the invitation (Indian mobile).
+export const CONTACTS = [
+  { label: '89439 19628', tel: '+918943919628' },
+  { label: '94952 50234', tel: '+919495250234' },
+];
+
 // Shown below the event card, as on the printed invitation.
 export const MARRIAGE_NOTE =
   'Marriage will be solemnized on 21 August 2026 (1202 Chingam 5), Friday, at Kavitha Auditorium, Malampuzha — Muhoortham between 10:30 am & 11:30 am.';
