@@ -49,9 +49,9 @@ export default function Landing({ opened, onOpen }) {
       <div className="landing-greet">Dear</div>
       <div className="landing-guest">{guest}</div>
       <h1 className="landing-names">
-        {WEDDING.brideShort}
-        <span className="amp">&amp;</span>
         {WEDDING.groomShort}
+        <span className="amp">&amp;</span>
+        {WEDDING.brideShort}
       </h1>
       <div className="landing-date">{WEDDING.dateLabel}</div>
       <div className="landing-venue">{WEDDING.landingVenue}</div>

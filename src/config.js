@@ -2,9 +2,9 @@
 
 export const WEDDING = {
   brideShort: 'Sandra',
-  groomShort: 'Abhiram',
+  groomShort: 'Abiram',
   brideFull: 'Sandra Menon P',
-  groomFull: 'Abhiram P',
+  groomFull: 'Abiram P',
   dateLabel: '22 · AUGUST · 2026',
   dateTime: '2026-08-22T17:00:00+05:30',
   landingVenue: 'NAKSHATRA AUDITORIUM, MANNUR',
@@ -30,18 +30,18 @@ export const MARRIAGE_NOTE =
 
 export const FAMILIES = [
   {
+    side: "GROOM'S FAMILY",
+    name: 'Abiram P',
+    father: 'Late Sivaraman Nair',
+    mother: 'Ajitha Sivaraman',
+    residence: 'Panthathodi Kalam, Mannur West, Kottakunnu, Palakkad',
+  },
+  {
     side: "BRIDE'S FAMILY",
     name: 'Sandra Menon P',
     father: 'T.E. Vijayan',
     mother: 'Sheeja P',
     residence: 'Dwaraka (Valiya Padaveedu), Akathethara, Palakkad',
-  },
-  {
-    side: "GROOM'S FAMILY",
-    name: 'Abhiram P',
-    father: 'Late Sivaraman Nair',
-    mother: 'Ajitha Sivaraman',
-    residence: 'Panthathodi Kalam, Mannur West, Kottakunnu, Palakkad',
   },
 ];
 

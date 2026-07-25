@@ -1,6 +1,6 @@
-# Sandra & Abhiram — Wedding Invitation
+# Abiram & Sandra — Wedding Invitation
 
-Digital wedding invitation for **Sandra Menon P & Abhiram P** — Wedding Reception, 22 August 2026, Nakshatra Auditorium, Mannur, Palakkad, Kerala.
+Digital wedding invitation for **Abiram P & Sandra Menon P** — Wedding Reception, 22 August 2026, Nakshatra Auditorium, Mannur, Palakkad, Kerala.
 Built with **React + Vite**.
 
 ## Features

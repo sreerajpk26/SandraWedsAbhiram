@@ -45,7 +45,7 @@ export default function Wishes({ opened, showToast }) {
           <textarea
             value={msg}
             onChange={(e) => setMsg(e.target.value)}
-            placeholder={`Write a blessing or warm wish for ${WEDDING.brideShort} & ${WEDDING.groomShort}…`}
+            placeholder={`Write a blessing or warm wish for ${WEDDING.groomShort} & ${WEDDING.brideShort}…`}
           />
           <button className="wfl-submit" onClick={handleSubmit} disabled={sending}>
             {sending ? 'SENDING…' : 'SEND WISHES ✦'}

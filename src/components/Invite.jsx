@@ -7,9 +7,9 @@ export default function Invite() {
       <div className="reveal">
         <div className="invite-blessing">WITH THE DIVINE BLESSINGS</div>
         <h2 className="invite-names">
-          {WEDDING.brideShort}
-          <span className="amp">&amp;</span>
           {WEDDING.groomShort}
+          <span className="amp">&amp;</span>
+          {WEDDING.brideShort}
         </h2>
         <div className="invite-date">{WEDDING.dateLabel}</div>
         <div className="section-eyebrow">— YOU ARE CORDIALLY INVITED —</div>
@@ -17,7 +17,7 @@ export default function Invite() {
           <p>We joyfully announce the wedding of</p>
           <p>
             <span className="accent">
-              {WEDDING.brideFull} &amp; {WEDDING.groomFull}
+              {WEDDING.groomFull} &amp; {WEDDING.brideFull}
             </span>
           </p>
           <p>
